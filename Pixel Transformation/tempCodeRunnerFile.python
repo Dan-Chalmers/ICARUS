@@ -1,0 +1,5 @@
+shape = NP.asarray(img.open(file))
+    NP.savetxt(pxlDirectory+'//{0}'.format(file.strip('.png').strip('D://TRAINING'))+'.csv', shape, delimiter = ',')
+    #print (file)
+    #df = PD.DataFrame(shape, columns = ['R', 'G', 'B'])
+    #df.to_excel(pxlDirectory+'//{0}'.format(file.strip('.png')), index = False)
