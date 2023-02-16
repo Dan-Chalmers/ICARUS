@@ -43,7 +43,7 @@ def getTransform() -> A.core.composition.Compose:
 ''' Apply the augmentation pipeline and save image '''
 def augment(transform: A.core.composition.Compose, image: NP.ndarray, name: int, shape: str):
     # Augment an image
-    for i in range (801):
+    for i in range (800):
         transformed = transform(image=image)['image']
         transformed = CV.cvtColor(transformed, CV.COLOR_RGB2BGR)
         CV.imwrite('D://VALIDATION//{0}{1}.png'.format(str(shape), str(name)), transformed)
